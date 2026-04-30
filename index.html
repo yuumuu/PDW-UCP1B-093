@@ -4,35 +4,229 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Community</title>
+    <link rel="icon" href="assets\images\app-logo\app-logo.png" type="image/png">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <link href="assets/css/app.css" rel="stylesheet">
 </head>
-<body class="overflow-hidden bg-white px-4 py-1 space-y-2">
+<body class="overflow-x-hidden bg-white px-3 md:px-6 py-1 space-y-2">
     <nav class="bg-white">
         <div class="container mx-auto px-4 py-4 flex items-center justify-between">
-            <a href="#" class="text-xl font-bold text-gray-800">Tech Community</a>
+            <a href="/" class="text-xl font-bold text-zinc-800 flex items-center">
+                Tech Community.
+            </a>
             <div class="space-x-1">
-                <a href="#" class="text-sm text-gray-600 hover:text-gray-800 py-2 px-4 border-b-2 border-lime-400">Home</a>
-                <a href="#" class="text-sm text-gray-600 hover:text-gray-800 py-2 px-4">Gallery</a>
-                <a href="#" class="text-sm text-gray-600 hover:text-gray-800 py-2 px-4">Join Us</a>
+                <a href="/" class="text-sm text-zinc-500 hover:text-zinc-800 py-2 px-4 font-semibold border-b-2 border-lime-400">Home</a>
+                <a href="/gallery/" class="text-sm text-zinc-500 hover:text-zinc-800 py-2 px-4">Gallery</a>
+                <a href="/join/"
+                class="text-sm py-2 z-0 px-4 bg-zinc-800 text-white relative hover:bg-lime-600 transition-colors duration-200 rounded-2xl light-inset">Join Us</a>
             </div>
-            
         </div>
     </nav>
 
-    <main class="px-4 py-8 rounded-3xl bg-gray-50">
+    <main class="p-8 md:p-16 rounded-4xl bg-zinc-50 flex flex-col items-center justify-center gap-5 dark-inset">
+        <section class="mb-12 text-center pt-10">
+            <span class="text-sm text-lime-500 bg-lime-100 py-1.5 px-3.5 rounded-2xl font-semibold tracking-wide">
+                Build with <img src="https://avatars.githubusercontent.com/u/120004849?v=4&size=64" alt="" class="ml-1 border inline-block w-5 h-5 rounded-full translate-y-[-2px]" /> Haidaryuum
+            </span>
+            <h1 class="text-6xl sm:text-8xl lg:text-9xl font-bold text-zinc-800 leading-[0.85] my-5 tracking-tight">
+                Welcome to Tech Community.
+            </h1>
+            <h3 class="text-lg text-zinc-400 mt-10">
+                Connect with fellow tech enthusiasts and stay updated with the latest trends.
+            </h3>
+        </section>
+
+        <div class="w-50 h-0.5 bg-lime-400 rounded-full mb-12"></div>
+
         <section class="mb-12">
-            <h1 class="text-4xl font-bold text-gray-800 mb-4">Welcome to Tech Community</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <a href="https://discord.gg/3PjXdRmvy" target="_blank" class="bg-white rounded-2xl p-8 lg:p-10 flex flex-col items-center justify-center gap-4 group/item inset-shadow-2xs hover:inset-shadow-sm inset-shadow-lime-500/30 duration-200">
+                    <span class="bg-lime-100 rounded-xl p-2 text-lime-500"><i data-lucide="cpu"></i></span>
+                    <h2 class="text-2xl font-semibold text-zinc-800 py-1 px-4 rounded-2xl group-hover/item:text-lime-500 hover:bg-lime-500 hover:text-white duration-200 group/link hover:shadow-lg shadow-lime-500/40 flex items-center justify-center gap-1.5">
+                        <span>Tech Talks</span><i class="hidden group-hover/link:inline-block group-hover/link:text-white" data-lucide="arrow-up-right"></i>
+                    </h2>
+                    <p class="text-zinc-500">Join our weekly tech talks to learn from industry experts and share your knowledge.</p>
+                </a>
+                <a href="/gallery/" class="bg-white rounded-2xl p-8 lg:p-10 flex flex-col items-center justify-center gap-4 group/item inset-shadow-2xs hover:inset-shadow-sm inset-shadow-lime-500/30 duration-200">
+                    <span class="bg-lime-100 rounded-xl p-2 text-lime-500"><i data-lucide="globe"></i></span>
+                    <h2 class="text-2xl font-semibold text-zinc-800 py-1 px-4 rounded-2xl group-hover/item:text-lime-500 hover:bg-lime-500 hover:text-white duration-200 group/link hover:shadow-lg shadow-lime-500/40 flex items-center justify-center gap-1.5">
+                        <span>Tech Media</span><i class="hidden group-hover/link:inline-block group-hover/link:text-white" data-lucide="arrow-up-right"></i>
+                    </h2>
+                    <p class="text-zinc-500">Explore our collection of tech innovations and creative projects.</p>
+                </a>
+                <a href="/join/" class="bg-white rounded-2xl p-8 lg:p-10 md:col-span-2 lg:col-span-1 flex flex-col items-center justify-center gap-4 group/item inset-shadow-2xs hover:inset-shadow-sm inset-shadow-lime-500/30 duration-200">
+                    <span class="bg-lime-100 rounded-xl p-2 text-lime-500"><i data-lucide="users"></i></span>
+                    <h2 class="text-2xl font-semibold text-zinc-800 py-1 px-4 rounded-2xl group-hover/item:text-lime-500 hover:bg-lime-500 hover:text-white duration-200 group/link hover:shadow-lg shadow-lime-500/40 flex items-center justify-center gap-1.5">
+                        <span>Tech Membership</span><i class="hidden group-hover/link:inline-block group-hover/link:text-white" data-lucide="arrow-up-right"></i>
+                    </h2>
+                    <p class="text-zinc-500">Join our community to access exclusive content and networking opportunities.</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="mb-12 w-full container mx-auto px-4">
+            <div class="">
+                <h2 class="text-3xl font-bold text-zinc-800 mb-2">Our Members</h2>
+                <p class="text-zinc-500">Let's connect with our amazing community of tech enthusiasts!</p>
+            </div>
+            <div id="MemberLists" class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8">
+                <!-- Nama, Email, Bidang Minat -->
+                <div class="relative w-auto h-24 bg-white rounded-2xl p-4 flex items-center gap-4 inset-shadow-2xs hover:inset-shadow-sm inset-shadow-lime-500/20 duration-200 border-b-2 border-r border-lime-500">
+                    <div class="p-5 bg-lime-100 rounded-2xl flex items-center justify-center">
+                        <i data-lucide="user" class="text-lime-500"></i>
+                    </div>
+                    <div>
+                        <div class="absolute -top-2 -right-2 flex items-center gap-1">
+                            <img src="assets\images\item\Star.svg" class="w-6" />
+                            <img src="assets\images\item\Star.svg" class="w-4 mt-3" />
+                        </div>
+                        <h3 class="font-semibold text-zinc-800">John Doe</h3>
+                        <a href="mailto:john.doe@example.com" class="text-zinc-500 text-sm hover:text-zinc-700">john.doe@example.com</a>
+                        <p class="text-xs text-lime-500">Software Engineer</p>
+                    </div>
+                </div>
+                <div class="relative w-auto h-24 bg-white rounded-2xl p-4 flex items-center gap-4 inset-shadow-2xs hover:inset-shadow-sm inset-shadow-lime-500/20 duration-200 border-b-2 border-r border-lime-500">
+                    <div class="p-5 bg-lime-100 rounded-2xl flex items-center justify-center">
+                        <i data-lucide="user" class="text-lime-500"></i>
+                    </div>
+                    <div>
+                        <div class="absolute -top-2 -right-2 flex items-center gap-1">
+                            <img src="assets\images\item\Star.svg" class="w-6" />
+                            <img src="assets\images\item\Star.svg" class="w-4 mt-3" />
+                        </div>
+                        <h3 class="font-semibold text-zinc-800">John Doe</h3>
+                        <a href="mailto:john.doe@example.com" class="text-zinc-500 text-sm hover:text-zinc-700">john.doe@example.com</a>
+                        <p class="text-xs text-lime-500">Software Engineer</p>
+                    </div>
+                </div>
+                <div class="relative w-auto h-24 bg-white rounded-2xl p-4 flex items-center gap-4 inset-shadow-2xs hover:inset-shadow-sm inset-shadow-lime-500/20 duration-200 border-b-2 border-r border-lime-500">
+                    <div class="p-5 bg-lime-100 rounded-2xl flex items-center justify-center">
+                        <i data-lucide="user" class="text-lime-500"></i>
+                    </div>
+                    <div>
+                        <div class="absolute -top-2 -right-2 flex items-center gap-1">
+                            <img src="assets\images\item\Star.svg" class="w-6" />
+                            <img src="assets\images\item\Star.svg" class="w-4 mt-3" />
+                        </div>
+                        <h3 class="font-semibold text-zinc-800">John Doe</h3>
+                        <a href="mailto:john.doe@example.com" class="text-zinc-500 text-sm hover:text-zinc-700">john.doe@example.com</a>
+                        <p class="text-xs text-lime-500">Software Engineer</p>
+                    </div>
+                </div>
+                <div class="relative w-auto h-24 bg-white rounded-2xl p-4 flex items-center gap-4 inset-shadow-2xs hover:inset-shadow-sm inset-shadow-lime-500/20 duration-200 border-b-2 border-r border-lime-500">
+                    <div class="p-5 bg-lime-100 rounded-2xl flex items-center justify-center">
+                        <i data-lucide="user" class="text-lime-500"></i>
+                    </div>
+                    <div>
+                        <div class="absolute -top-2 -right-2 flex items-center gap-1">
+                            <img src="assets\images\item\Star.svg" class="w-6" />
+                            <img src="assets\images\item\Star.svg" class="w-4 mt-3" />
+                        </div>
+                        <h3 class="font-semibold text-zinc-800">John Doe</h3>
+                        <a href="mailto:john.doe@example.com" class="text-zinc-500 text-sm hover:text-zinc-700">john.doe@example.com</a>
+                        <p class="text-xs text-lime-500">Software Engineer</p>
+                    </div>
+                </div>
+                <div class="relative w-auto h-24 bg-white rounded-2xl p-4 flex items-center gap-4 inset-shadow-2xs hover:inset-shadow-sm inset-shadow-lime-500/20 duration-200 border-b-2 border-r border-lime-500">
+                    <div class="p-5 bg-lime-100 rounded-2xl flex items-center justify-center">
+                        <i data-lucide="user" class="text-lime-500"></i>
+                    </div>
+                    <div>
+                        <div class="absolute -top-2 -right-2 flex items-center gap-1">
+                            <img src="assets\images\item\Star.svg" class="w-6" />
+                            <img src="assets\images\item\Star.svg" class="w-4 mt-3" />
+                        </div>
+                        <h3 class="font-semibold text-zinc-800">John Doe</h3>
+                        <a href="mailto:john.doe@example.com" class="text-zinc-500 text-sm hover:text-zinc-700">john.doe@example.com</a>
+                        <p class="text-xs text-lime-500">Software Engineer</p>
+                    </div>
+                </div>
+                <div class="relative w-auto h-24 bg-white rounded-2xl p-4 flex items-center gap-4 inset-shadow-2xs hover:inset-shadow-sm inset-shadow-lime-500/20 duration-200 border-b-2 border-r border-lime-500">
+                    <div class="p-5 bg-lime-100 rounded-2xl flex items-center justify-center">
+                        <i data-lucide="user" class="text-lime-500"></i>
+                    </div>
+                    <div>
+                        <div class="absolute -top-2 -right-2 flex items-center gap-1">
+                            <img src="assets\images\item\Star.svg" class="w-6" />
+                            <img src="assets\images\item\Star.svg" class="w-4 mt-3" />
+                        </div>
+                        <h3 class="font-semibold text-zinc-800">John Doe</h3>
+                        <a href="mailto:john.doe@example.com" class="text-zinc-500 text-sm hover:text-zinc-700">john.doe@example.com</a>
+                        <p class="text-xs text-lime-500">Software Engineer</p>
+                    </div>
+                </div>
+                <div class="relative w-auto h-24 bg-white rounded-2xl p-4 flex items-center gap-4 inset-shadow-2xs hover:inset-shadow-sm inset-shadow-lime-500/20 duration-200 border-b-2 border-r border-lime-500">
+                    <div class="p-5 bg-lime-100 rounded-2xl flex items-center justify-center">
+                        <i data-lucide="user" class="text-lime-500"></i>
+                    </div>
+                    <div>
+                        <div class="absolute -top-2 -right-2 flex items-center gap-1">
+                            <img src="assets\images\item\Star.svg" class="w-6" />
+                            <img src="assets\images\item\Star.svg" class="w-4 mt-3" />
+                        </div>
+                        <h3 class="font-semibold text-zinc-800">John Doe</h3>
+                        <a href="mailto:john.doe@example.com" class="text-zinc-500 text-sm hover:text-zinc-700">john.doe@example.com</a>
+                        <p class="text-xs text-lime-500">Software Engineer</p>
+                    </div>
+                </div>
+                <div class="relative w-auto h-24 bg-white rounded-2xl p-4 flex items-center gap-4 inset-shadow-2xs hover:inset-shadow-sm inset-shadow-lime-500/20 duration-200 border-b-2 border-r border-lime-500">
+                    <div class="p-5 bg-lime-100 rounded-2xl flex items-center justify-center">
+                        <i data-lucide="user" class="text-lime-500"></i>
+                    </div>
+                    <div>
+                        <div class="absolute -top-2 -right-2 flex items-center gap-1">
+                            <img src="assets\images\item\Star.svg" class="w-6" />
+                            <img src="assets\images\item\Star.svg" class="w-4 mt-3" />
+                        </div>
+                        <h3 class="font-semibold text-zinc-800">John Doe</h3>
+                        <a href="mailto:john.doe@example.com" class="text-zinc-500 text-sm hover:text-zinc-700">john.doe@example.com</a>
+                        <p class="text-xs text-lime-500">Software Engineer</p>
+                    </div>
+                </div>
+                <div class="relative w-auto h-24 bg-white rounded-2xl p-4 flex items-center gap-4 inset-shadow-2xs hover:inset-shadow-sm inset-shadow-lime-500/20 duration-200 border-b-2 border-r border-lime-500">
+                    <div class="p-5 bg-lime-100 rounded-2xl flex items-center justify-center">
+                        <i data-lucide="user" class="text-lime-500"></i>
+                    </div>
+                    <div>
+                        <div class="absolute -top-2 -right-2 flex items-center gap-1">
+                            <img src="assets\images\item\Star.svg" class="w-6" />
+                            <img src="assets\images\item\Star.svg" class="w-4 mt-3" />
+                        </div>
+                        <h3 class="font-semibold text-zinc-800">John Doe</h3>
+                        <a href="mailto:john.doe@example.com" class="text-zinc-500 text-sm hover:text-zinc-700">john.doe@example.com</a>
+                        <p class="text-xs text-lime-500">Software Engineer</p>
+                    </div>
+                </div>
+                <div class="relative w-auto h-24 bg-white rounded-2xl p-4 flex items-center gap-4 inset-shadow-2xs hover:inset-shadow-sm inset-shadow-lime-500/20 duration-200 border-b-2 border-r border-lime-500">
+                    <div class="p-5 bg-lime-100 rounded-2xl flex items-center justify-center">
+                        <i data-lucide="user" class="text-lime-500"></i>
+                    </div>
+                    <div>
+                        <div class="absolute -top-2 -right-2 flex items-center gap-1">
+                            <img src="assets\images\item\Star.svg" class="w-6" />
+                            <img src="assets\images\item\Star.svg" class="w-4 mt-3" />
+                        </div>
+                        <h3 class="font-semibold text-zinc-800">John Doe</h3>
+                        <a href="mailto:john.doe@example.com" class="text-zinc-500 text-sm hover:text-zinc-700">john.doe@example.com</a>
+                        <p class="text-xs text-lime-500">Software Engineer</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer class="bg-white">
-        <div class="container mx-auto px-4 py-4 text-xs text-center text-gray-600 flex justify-between">
+        <div class="container mx-auto px-4 py-4 text-xs text-center text-zinc-500 flex justify-between">
             <span>&copy; 2026 Tech Community. All rights reserved.</span>
             <span>Collaborated with <a href="https://github.com/yuumuu/" class="text-lime-500 hover:text-lime-700">Haidaryuum | Yuumuu</a></span>
         </div>
     </footer>
 
     <script src="assets/js/app.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
